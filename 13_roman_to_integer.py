@@ -1,3 +1,4 @@
+# only finds 1 - 3999
 class Solution:
     def __init__(self):
         pass
