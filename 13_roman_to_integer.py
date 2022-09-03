@@ -1,9 +1,8 @@
-# only finds 1 - 3999
 class Solution:
     def __init__(self):
         pass
 
-    def rom_to_int(self, roman_num:str):
+    def romanToInt(self, roman_num:str):
         rom_num_list = list(roman_num)
         int_list = []
         for i in range(len(rom_num_list)):
@@ -64,9 +63,9 @@ class Solution:
 
 def main():
     x = Solution()
-    s = "".upper()
+    s = "mmmcmxcix".upper()
 
-    print(x.rom_to_int(s))
+    print(x.romanToInt(s))
 
 if __name__ == '__main__':
     main()
