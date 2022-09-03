@@ -1,8 +1,20 @@
-def palindrome(number):
-    number = list(number)
-    number2 = number[::-1]
-    if number == number2:
-        return True
-    return False
+class Solution:
+    # def isPalindrome(self, x: int) -> bool:
+    def isPalindrome(self, x):
+        x = str(x)
 
-print(palindrome("123454321"))
+        x = list(x)
+        number2 = x[::-1]
+        if x == number2:
+            return True
+        return False
+
+
+def main():
+    x = 12321
+    y = 39984
+    my_sol = Solution()
+    print(my_sol.isPalindrome(x))
+    print(my_sol.isPalindrome(y))
+
+main()
